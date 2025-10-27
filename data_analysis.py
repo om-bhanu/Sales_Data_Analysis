@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("sales_data.csv")
 
 # Step 2: Show first 5 rows
-print("📊 First 5 rows of data:")
+print(" First 5 rows of data:")
 print(data.head())
 
 # Step 3: Basic info
@@ -13,7 +13,7 @@ print("\n📋 Data Info:")
 print(data.info())
 
 # Step 4: Total sales by product
-print("\n💰 Total Sales by Product:")
+print("\n Total Sales by Product:")
 print(data.groupby("Product")["Sales"].sum())
 
 # Step 5: Total profit by region
@@ -35,6 +35,6 @@ plt.tight_layout()
 plt.show()
 
 # Step 8: Shape and NaN check
-print("\n🔢 Shape of DataFrame:", data.shape)
-print("\n❌ Missing Values (NaN):")
+print("\n Shape of DataFrame:", data.shape)
+print("\n Missing Values (NaN):")
 print(data.isnull().sum())
