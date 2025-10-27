@@ -9,7 +9,7 @@ print(" First 5 rows of data:")
 print(data.head())
 
 # Step 3: Basic info
-print("\n📋 Data Info:")
+print("\n Data Info:")
 print(data.info())
 
 # Step 4: Total sales by product
@@ -17,7 +17,7 @@ print("\n Total Sales by Product:")
 print(data.groupby("Product")["Sales"].sum())
 
 # Step 5: Total profit by region
-print("\n📈 Total Profit by Region:")
+print("\n Total Profit by Region:")
 print(data.groupby("Region")["Profit"].sum())
 
 # Step 6: Plot total sales by product
